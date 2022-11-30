@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Dead
+  - Windows
   layers:
   - Default
   - TransparentFX

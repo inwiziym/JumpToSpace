@@ -6,6 +6,5 @@ public class UpdPlayer : MonoBehaviour
     void Start()
     {
         TimerGame.gameTime = PlayerPrefs.GetFloat("GameTimer", 120f);
-
     }
 }

@@ -9,5 +9,10 @@ public class AllGame : MonoBehaviour
         PlayerPrefs.SetInt("WiresScope", 0);
         PlayerPrefs.SetInt("PlasticScope", 0);
         PlayerPrefs.SetFloat("GameTimer", 120f);
+
+        PlayerPrefs.SetInt("repwindows0", 1);
+        PlayerPrefs.SetInt("repwindows1", 1);
+        PlayerPrefs.SetInt("repwindows2", 1);
+        PlayerPrefs.SetInt("repwindows3", 1);
     }
 }
