@@ -10,13 +10,13 @@ public class Repairwindows : MonoBehaviour
 
     public void repairwind()
     {
-        int WiresScope = PlayerPrefs.GetInt("DuctTapeScope"),
+        int DuctTapeScope = PlayerPrefs.GetInt("DuctTapeScope"),
             Plastic = PlayerPrefs.GetInt("PlasticScope");
 
-        if (WiresScope >= 10 && Plastic >= 10)
+        if (DuctTapeScope >= 30 && Plastic >= 30)
         {
-            PlayerPrefs.SetInt("DuctTapeScope", WiresScope - 10);
-            PlayerPrefs.SetInt("PlasticScope", Plastic - 10);
+            PlayerPrefs.SetInt("DuctTapeScope", DuctTapeScope - 30);
+            PlayerPrefs.SetInt("PlasticScope", Plastic - 30);
             PlayerPrefs.SetInt("repwindows0", 0);
             RepWin.SetActive(false);
             updscope.Start();
@@ -30,13 +30,13 @@ public class Repairwindows : MonoBehaviour
 
     public void repairwind2()
     {
-        int WiresScope = PlayerPrefs.GetInt("DuctTapeScope"),
+        int DuctTapeScope = PlayerPrefs.GetInt("DuctTapeScope"),
             Plastic = PlayerPrefs.GetInt("PlasticScope");
 
-        if (WiresScope >= 10 && Plastic >= 10)
+        if (DuctTapeScope >= 30 && Plastic >= 30)
         {
-            PlayerPrefs.SetInt("DuctTapeScope", WiresScope - 10);
-            PlayerPrefs.SetInt("PlasticScope", Plastic - 10);
+            PlayerPrefs.SetInt("DuctTapeScope", DuctTapeScope - 30);
+            PlayerPrefs.SetInt("PlasticScope", Plastic - 30);
             PlayerPrefs.SetInt("repwindows1", 0);
             RepWin.SetActive(false);
             updscope.Start();
@@ -49,13 +49,13 @@ public class Repairwindows : MonoBehaviour
 
     public void repairwind3()
     {
-        int WiresScope = PlayerPrefs.GetInt("DuctTapeScope"),
+        int DuctTapeScope = PlayerPrefs.GetInt("DuctTapeScope"),
             Plastic = PlayerPrefs.GetInt("PlasticScope");
 
-        if (WiresScope >= 10 && Plastic >= 10)
+        if (DuctTapeScope >= 30 && Plastic >= 30)
         {
-            PlayerPrefs.SetInt("DuctTapeScope", WiresScope - 10);
-            PlayerPrefs.SetInt("PlasticScope", Plastic - 10);
+            PlayerPrefs.SetInt("DuctTapeScope", DuctTapeScope - 30);
+            PlayerPrefs.SetInt("PlasticScope", Plastic - 30);
             PlayerPrefs.SetInt("repwindows2", 0);
             RepWin.SetActive(false);
             updscope.Start();
@@ -69,13 +69,13 @@ public class Repairwindows : MonoBehaviour
 
     public void repairwind4()
     {
-        int WiresScope = PlayerPrefs.GetInt("DuctTapeScope"),
+        int DuctTapeScope = PlayerPrefs.GetInt("DuctTapeScope"),
             Plastic = PlayerPrefs.GetInt("PlasticScope");
 
-        if (WiresScope >= 10 && Plastic >= 10)
+        if (DuctTapeScope >= 30 && Plastic >= 30)
         {
-            PlayerPrefs.SetInt("DuctTapeScope", WiresScope - 10);
-            PlayerPrefs.SetInt("PlasticScope", Plastic - 10);
+            PlayerPrefs.SetInt("DuctTapeScope", DuctTapeScope - 30);
+            PlayerPrefs.SetInt("PlasticScope", Plastic - 30);
             PlayerPrefs.SetInt("repwindows3", 0);
             RepWin.SetActive(false);
             updscope.Start();
