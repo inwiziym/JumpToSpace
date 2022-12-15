@@ -5,6 +5,8 @@ public class LoadScopeObj : MonoBehaviour
     public Text DuctTape;
     public Text Wires;
     public Text Plastic;
+    public Text OreIron;
+    public Text OreCopper;
 
     public GameObject[] repwindows;
 
@@ -26,5 +28,7 @@ public class LoadScopeObj : MonoBehaviour
         DuctTape.text = PlayerPrefs.GetInt("DuctTapeScope", 0).ToString();
         Wires.text = PlayerPrefs.GetInt("WiresScope", 0).ToString();
         Plastic.text = PlayerPrefs.GetInt("PlasticScope", 0).ToString();
+        OreIron.text = PlayerPrefs.GetInt("OreironScope", 0).ToString();
+        OreCopper.text = PlayerPrefs.GetInt("OrecopperScope", 0).ToString();
     }
 }
