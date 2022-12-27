@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 1787270118307388870
     second: im_planet_7
+  - first:
+      213: -5119072013057201596
+    second: im_black_hole
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -290,6 +293,27 @@ TextureImporter:
       bones: []
       spriteID: 6cdd16704b8adc810800000000000000
       internalID: 1787270118307388870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_black_hole
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 348
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ae41a402765f8b0800000000000000
+      internalID: -5119072013057201596
       vertices: []
       indices: 
       edges: []

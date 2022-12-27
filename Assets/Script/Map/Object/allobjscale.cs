@@ -2,14 +2,14 @@
 
 public class allobjscale : MonoBehaviour
 {
-    public static int DuctTape;
-    public static int Plastic;
-    public static int OreIron;
-    public static int OreCopper;
-    public static int Iron;
-    public static int Copper;
-    public static int Wires;
-    public static int Motherboard;
+    public static int DuctTape; //изолента
+    public static int Plastic; //пластик
+    public static int OreIron; //руды железа
+    public static int OreCopper; //руды меди
+    public static int Iron; //железо
+    public static int Copper; //медь
+    public static int Wires; //провода
+    public static int Motherboard; //плата
 
     private void Start()
     {

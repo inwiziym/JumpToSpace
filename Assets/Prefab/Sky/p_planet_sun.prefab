@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8105317819761676253}
   - component: {fileID: -7654167555065899518}
   m_Layer: 0
-  m_Name: im_planet_sun
+  m_Name: p_planet_sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,3 +1,4 @@
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
 public class LoadScopeObj : MonoBehaviour
@@ -20,6 +21,8 @@ public class LoadScopeObj : MonoBehaviour
     public Text TextUpgTimerLvl1;
     public Text TextUpgTimerLvl2;
     public Text TextUpgTimerLvl3;
+
+    public Animator Blade;
 
     public void Start()
     {
@@ -47,6 +50,11 @@ public class LoadScopeObj : MonoBehaviour
         {
             CaptainBridge.SetActive(true);
             TextCaptainBridge.SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("RepVentilation", 0) == 0)
+        {
+            Blade.enabled = true;
         }
 
         DuctTape.text = PlayerPrefs.GetInt("DuctTapeScope", 0).ToString();

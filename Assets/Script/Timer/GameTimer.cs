@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {    
     [SerializeField] private Text timerText;
-    public GameObject godeadscreen;
+    public GameObject go_zeroh2o;
     public GameObject goui;
 
     Image timerBar;
@@ -33,7 +33,7 @@ public class GameTimer : MonoBehaviour
             PlayerPrefs.SetInt("OreIronScope", PlayerPrefs.GetInt("OreIronScope", 0) + allobjscale.OreIron);
             PlayerPrefs.SetInt("OreCopperScope", PlayerPrefs.GetInt("OreCopperScope", 0) + allobjscale.OreCopper);
 
-            godeadscreen.SetActive(true);
+            go_zeroh2o.SetActive(true);
             goui.SetActive(false);
             Time.timeScale = 0;
         }

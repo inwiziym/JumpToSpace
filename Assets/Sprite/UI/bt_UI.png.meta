@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -2616219233194784605
-    second: bt_UI_0
+    second: bt_bg
   - first:
       213: 7932005519556322153
     second: bt_UI_1
@@ -12,14 +12,20 @@ TextureImporter:
       213: 2549200556833695984
     second: bt_UI_2
   - first:
-      213: 859456732463483037
-    second: bt_UI_5
+      213: -4431888895917533480
+    second: bt_left
   - first:
       213: -6628581644047382218
-    second: bt_UI_6
+    second: bt_right
   - first:
-      213: -4431888895917533480
-    second: bt_UI_3
+      213: 1316592409370493605
+    second: bt_bg_big
+  - first:
+      213: 1215278938319050673
+    second: bt_restart
+  - first:
+      213: -7143844585130318557
+    second: bt_pause
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,12 +127,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bt_UI_0
+      name: bt_bg
       rect:
         serializedVersion: 2
-        x: 9
-        y: 313
-        width: 191
+        x: 20
+        y: 307
+        width: 482
         height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,10 +151,10 @@ TextureImporter:
       name: bt_UI_1
       rect:
         serializedVersion: 2
-        x: 323
-        y: 324
-        width: 168
-        height: 169
+        x: 545
+        y: 306
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +172,10 @@ TextureImporter:
       name: bt_UI_2
       rect:
         serializedVersion: 2
-        x: 9
-        y: 234
-        width: 86
-        height: 62
+        x: 772
+        y: 318
+        width: 169
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,13 +190,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bt_UI_5
+      name: bt_left
       rect:
         serializedVersion: 2
-        x: 9
-        y: 147
+        x: 34
+        y: 229
         width: 86
-        height: 62
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d98cd4638576deb00800000000000000
-      internalID: 859456732463483037
+      spriteID: 8d656d2c784ce72c0800000000000000
+      internalID: -4431888895917533480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bt_UI_6
+      name: bt_right
       rect:
         serializedVersion: 2
-        x: 4
-        y: 8
-        width: 115
-        height: 114
+        x: 36
+        y: 150
+        width: 86
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,13 +232,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bt_UI_3
+      name: bt_bg_big
       rect:
         serializedVersion: 2
-        x: 157
-        y: 176
-        width: 84
-        height: 119
+        x: 410
+        y: 10
+        width: 601
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +246,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d656d2c784ce72c0800000000000000
-      internalID: -4431888895917533480
+      spriteID: 5a2018a12d9754210800000000000000
+      internalID: 1316592409370493605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bt_restart
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 9
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7558d61c98dd010800000000000000
+      internalID: 1215278938319050673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bt_pause
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 175
+        width: 99
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325a5b41337fbdc90800000000000000
+      internalID: -7143844585130318557
       vertices: []
       indices: 
       edges: []
