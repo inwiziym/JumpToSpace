@@ -13,7 +13,7 @@ public class Platform : MonoBehaviour
     }
     public void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.name == "DeadZone" | collision.collider.name == "Dead")
+        if (collision.collider.name == "DeadZone")
         {
             float RandX = Random.Range(-2.55f, 2.55f);
             float RandY = transform.position.y + 13f;
