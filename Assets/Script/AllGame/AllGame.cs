@@ -14,6 +14,8 @@ public class AllGame : MonoBehaviour
 
     public void RestartGame()
     {
+        PlayerPrefs.SetInt("SelectControl", 1);
+        PlayerPrefs.SetFloat("GameTimer", 120f);
         PlayerPrefs.SetInt("TheStartGame", 1);
         PlayerPrefs.SetInt("ScorePlayer", 0);
         PlayerPrefs.SetInt("DuctTapeScope", 0); //изолента
@@ -33,7 +35,6 @@ public class AllGame : MonoBehaviour
         PlayerPrefs.SetInt("repwindows2", 1);
         PlayerPrefs.SetInt("repwindows3", 1);
 
-        PlayerPrefs.SetFloat("GameTimer", 120f);
         PlayerPrefs.SetFloat("GameTimerUpd", 240f);
 
         PlayerPrefs.SetInt("TextUpgTimerLvl1", 10);

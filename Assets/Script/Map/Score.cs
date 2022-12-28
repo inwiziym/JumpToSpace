@@ -8,10 +8,16 @@ public class Score : MonoBehaviour
     public static int ScorePlayer;
     public GameObject Camera;
 
+    
+    public GameObject[] Control;
+
     void Start()
     {
         ScorePlayer = 0;
         HighScoreText.text = "Текущий рекорд: " + PlayerPrefs.GetInt("ScorePlayer").ToString();
+
+        int ActivControl = PlayerPrefs.GetInt("SelectControl", 1);
+        Control[ActivControl].SetActive(true);
     }
     void Update()
     {        
@@ -30,6 +36,5 @@ public class Score : MonoBehaviour
             PlayerPrefs.SetInt("ScorePlayer", ScorePlayer);
             HighScoreText.text = "Новый рекорд: " + PlayerPrefs.GetInt("ScorePlayer").ToString();
         }
-
     }
 }

@@ -27,6 +27,7 @@ public class LoadScopeObj : MonoBehaviour
 
     public Animator Blade;
 
+
     public void Start()
     {
         for( int i = 0; i < repwindows.Length; i++ )
@@ -80,5 +81,6 @@ public class LoadScopeObj : MonoBehaviour
         TextUpgTimerLvl1.text = PlayerPrefs.GetInt("TextUpgTimerLvl1", 10).ToString();
         TextUpgTimerLvl2.text = PlayerPrefs.GetInt("TextUpgTimerLvl2", 10).ToString();
         TextUpgTimerLvl3.text = PlayerPrefs.GetInt("TextUpgTimerLvl3", 5).ToString();
+
     }
 }
