@@ -14,6 +14,7 @@ public class AllGame : MonoBehaviour
 
     public void RestartGame()
     {
+        PlayerPrefs.SetInt("TheStartGame", 1);
         PlayerPrefs.SetInt("ScorePlayer", 0);
         PlayerPrefs.SetInt("DuctTapeScope", 0); //изолента
         PlayerPrefs.SetInt("WiresScope", 0); //Провода

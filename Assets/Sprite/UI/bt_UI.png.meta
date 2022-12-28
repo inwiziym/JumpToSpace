@@ -130,10 +130,10 @@ TextureImporter:
       name: bt_bg
       rect:
         serializedVersion: 2
-        x: 20
-        y: 307
-        width: 482
-        height: 191
+        x: 34
+        y: 317
+        width: 481
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: bt_UI_2
       rect:
         serializedVersion: 2
-        x: 772
+        x: 775
         y: 318
-        width: 169
-        height: 169
+        width: 168
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +235,8 @@ TextureImporter:
       name: bt_bg_big
       rect:
         serializedVersion: 2
-        x: 410
-        y: 10
+        x: 405
+        y: 9
         width: 601
         height: 201
       alignment: 0
@@ -277,9 +277,9 @@ TextureImporter:
       name: bt_pause
       rect:
         serializedVersion: 2
-        x: 167
-        y: 175
-        width: 99
+        x: 168
+        y: 174
+        width: 91
         height: 120
       alignment: 0
       pivot: {x: 0, y: 0}

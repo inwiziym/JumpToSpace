@@ -12,6 +12,9 @@ public class LoadScopeObj : MonoBehaviour
     public Text Wires;
     public Text Motherboard;
 
+    public GameObject TheStartGo;
+    public GameObject CanvasGame;
+
     public GameObject[] repwindows;
     public GameObject CaptainBridge;
     public GameObject TextCaptainBridge;
@@ -55,6 +58,12 @@ public class LoadScopeObj : MonoBehaviour
         if (PlayerPrefs.GetInt("RepVentilation", 0) == 0)
         {
             Blade.enabled = true;
+        }
+
+        if (PlayerPrefs.GetInt("TheStartGame", 1) == 0)
+        {
+            TheStartGo.SetActive(false);
+            CanvasGame.SetActive(true);
         }
 
         DuctTape.text = PlayerPrefs.GetInt("DuctTapeScope", 0).ToString();
