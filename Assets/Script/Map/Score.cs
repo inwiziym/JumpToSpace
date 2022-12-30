@@ -9,7 +9,9 @@ public class Score : MonoBehaviour
     public GameObject Camera;
 
     public GameObject[] Jumpping;
-    
+
+    public GameObject SliderN;
+
     public GameObject[] Control;
 
     void Start()
@@ -23,6 +25,7 @@ public class Score : MonoBehaviour
         if (PlayerPrefs.GetInt("Jumpping", 0) == 1)
         {
             Jumpping[ActivControl].SetActive(true);
+            SliderN.SetActive(true);
         }
     }
     void Update()
