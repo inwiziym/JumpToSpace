@@ -27,6 +27,12 @@ public class LoadScopeObj : MonoBehaviour
 
     public Animator Blade;
 
+    public GameObject FireEngineIm;
+    public Animator FireEngine;
+
+
+    public GameObject ImJumppingLeft;
+    public GameObject ImJumppingRight;
 
     public void Start()
     {
@@ -67,6 +73,19 @@ public class LoadScopeObj : MonoBehaviour
             CanvasGame.SetActive(true);
         }
 
+
+        if (PlayerPrefs.GetInt("RepEngineChip", 1) == 0)
+        {
+            FireEngineIm.SetActive(true);
+            FireEngine.enabled = true;
+        }
+
+        if (PlayerPrefs.GetInt("Jumpping", 0) == 1)
+        {
+            ImJumppingLeft.SetActive(true);
+            ImJumppingRight.SetActive(true);
+        }
+
         DuctTape.text = PlayerPrefs.GetInt("DuctTapeScope", 0).ToString();
         Plastic.text = PlayerPrefs.GetInt("PlasticScope", 0).ToString();
         OreIron.text = PlayerPrefs.GetInt("OreIronScope", 0).ToString();
@@ -81,6 +100,8 @@ public class LoadScopeObj : MonoBehaviour
         TextUpgTimerLvl1.text = PlayerPrefs.GetInt("TextUpgTimerLvl1", 10).ToString();
         TextUpgTimerLvl2.text = PlayerPrefs.GetInt("TextUpgTimerLvl2", 10).ToString();
         TextUpgTimerLvl3.text = PlayerPrefs.GetInt("TextUpgTimerLvl3", 5).ToString();
+
+
 
     }
 }

@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
     public static int ScorePlayer;
     public GameObject Camera;
 
+    public GameObject[] Jumpping;
     
     public GameObject[] Control;
 
@@ -18,6 +19,11 @@ public class Score : MonoBehaviour
 
         int ActivControl = PlayerPrefs.GetInt("SelectControl", 1);
         Control[ActivControl].SetActive(true);
+
+        if (PlayerPrefs.GetInt("Jumpping", 0) == 1)
+        {
+            Jumpping[ActivControl].SetActive(true);
+        }
     }
     void Update()
     {        

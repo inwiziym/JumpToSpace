@@ -28,7 +28,10 @@ TextureImporter:
     second: im_planet_7
   - first:
       213: -5119072013057201596
-    second: im_black_hole
+    second: im_planet_black_hole
+  - first:
+      213: -8698054820079355896
+    second: im_planet_asteroid
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,7 +110,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,7 +122,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -298,7 +301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: im_black_hole
+      name: im_planet_black_hole
       rect:
         serializedVersion: 2
         x: 72
@@ -314,6 +317,27 @@ TextureImporter:
       bones: []
       spriteID: 44ae41a402765f8b0800000000000000
       internalID: -5119072013057201596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_planet_asteroid
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 150
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808bb44b93d4a4780800000000000000
+      internalID: -8698054820079355896
       vertices: []
       indices: 
       edges: []

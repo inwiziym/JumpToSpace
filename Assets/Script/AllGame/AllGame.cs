@@ -45,5 +45,9 @@ public class AllGame : MonoBehaviour
         PlayerPrefs.SetInt("RepEngineChip", 1);
         PlayerPrefs.SetInt("RepVentilation", 1);
 
+        PlayerPrefs.SetInt("CreateJumpping", 1);
+        PlayerPrefs.SetInt("Jumpping", 0);
+
+
     }
 }

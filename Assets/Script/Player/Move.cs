@@ -4,13 +4,15 @@ public class Move : MonoBehaviour
 {
     public static Move instance;
     public Rigidbody2D rb;
-    public float speed = 3;
+    public float speed;
 
     public GameObject Player;
     public static float horizontalSpeed;
     private bool leftMove;
     private bool rightMove;
 
+    public GameObject ImJumppingLeft;
+    public GameObject ImJumppingRight;
 
     float horizontal;
 
@@ -23,6 +25,12 @@ public class Move : MonoBehaviour
         if(instance == null)
         {
             instance = this;
+        }
+
+        if (PlayerPrefs.GetInt("Jumpping", 0) == 1)
+        {
+            ImJumppingLeft.SetActive(true);
+            ImJumppingRight.SetActive(true);
         }
     }
     //else button left click

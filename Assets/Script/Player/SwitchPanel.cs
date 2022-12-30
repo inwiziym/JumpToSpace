@@ -7,6 +7,7 @@ public class SwitchPanel : MonoBehaviour
 {
     public GameObject goplayer;
     public GameObject gomehanic;
+    public GameObject CreateJumpping;
 
     public void SwitchPanelPlayer()
     {

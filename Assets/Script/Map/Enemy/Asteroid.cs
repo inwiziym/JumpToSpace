@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
-public class BlackHole : MonoBehaviour
+public class Asteroid : MonoBehaviour
 {
     public GameObject godeadscreen;
     public GameObject goui;
@@ -10,6 +9,22 @@ public class BlackHole : MonoBehaviour
     public GameObject PlayerGO;
     public GameObject AstGO;
     public GameObject BlackHoleGO;
+
+    public float MoveSpeedAstX;
+    public float MoveSpeedAstY;
+    public float MoveSpeedAstZ;
+
+    public float Timer;
+    public Transform point;
+
+    public void Update()
+    {
+        if(Timer <= 0)
+        {
+            AstGO.transform.position = point.transform.position;
+        }
+        transform.position = transform.position + new Vector3(MoveSpeedAstX, MoveSpeedAstY, MoveSpeedAstZ);
+    }
 
     public void OnTriggerEnter2D(Collider2D Collider2D)
     {
@@ -31,12 +46,23 @@ public class BlackHole : MonoBehaviour
             Time.timeScale = 0;
         }
     }
+
+
     public void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.collider.name == "DeadZone")
         {
-            float RandX = Random.Range(-2.7f, 2.7f);
-            float RandY = transform.position.y + 100f;
+            float RandX = Random.Range(-6f, 6f);
+            float RandY = transform.position.y + 17f;
+
+            if(RandX > (0))
+            {
+                MoveSpeedAstX = Random.Range(-0.009f, -0.007f);
+            }
+            else
+            {
+                MoveSpeedAstX = Random.Range(0.007f, 0.009f);
+            }
 
             transform.position = new Vector3(RandX, RandY, 0);
         }

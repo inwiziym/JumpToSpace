@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8134808643843790547
-    second: im_settings
+    second: im_settings_panel
   - first:
       213: 2387802189220968728
     second: im_settings_
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: im_settings
+      name: im_settings_panel
       rect:
         serializedVersion: 2
         x: 23
