@@ -18,7 +18,7 @@ public class LoadScopeObj : MonoBehaviour
     public GameObject[] repwindows;
     public GameObject CaptainBridge;
     public GameObject TextCaptainBridge;
-
+    public GameObject Status;
     public Text TextUpgTimer;
 
     public Text TextUpgTimerLvl1;
@@ -36,7 +36,6 @@ public class LoadScopeObj : MonoBehaviour
 
     public AudioSource AudioSourceVent;
     public AudioSource AudioSourceEngine;
-
     public void Start()
     {
         for( int i = 0; i < repwindows.Length; i++ )
@@ -56,6 +55,7 @@ public class LoadScopeObj : MonoBehaviour
         
         if (PlayerPrefs.GetInt("repcaptainbridge", 0) == 1)
         {
+            Status.SetActive(true);
             CaptainBridge.SetActive(false);
             TextCaptainBridge.SetActive(true);
         }
@@ -91,6 +91,8 @@ public class LoadScopeObj : MonoBehaviour
             ImJumppingRight.SetActive(true);
         }
 
+
+
         DuctTape.text = PlayerPrefs.GetInt("DuctTapeScope", 0).ToString();
         Plastic.text = PlayerPrefs.GetInt("PlasticScope", 0).ToString();
         OreIron.text = PlayerPrefs.GetInt("OreIronScope", 0).ToString();
@@ -105,8 +107,6 @@ public class LoadScopeObj : MonoBehaviour
         TextUpgTimerLvl1.text = PlayerPrefs.GetInt("TextUpgTimerLvl1", 10).ToString();
         TextUpgTimerLvl2.text = PlayerPrefs.GetInt("TextUpgTimerLvl2", 10).ToString();
         TextUpgTimerLvl3.text = PlayerPrefs.GetInt("TextUpgTimerLvl3", 5).ToString();
-
-
 
     }
 }

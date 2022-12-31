@@ -5,6 +5,7 @@ public class CaptainBridge : MonoBehaviour
     public GameObject nonresources;
     public GameObject RepWin;
     public LoadScopeObj updscope;
+    public GameObject Status;
 
     public void repcaptainbridge()
     {
@@ -19,6 +20,7 @@ public class CaptainBridge : MonoBehaviour
             PlayerPrefs.SetInt("MotherboardScope", Motherboard - 2);
             PlayerPrefs.SetInt("repcaptainbridge", 1);
 
+            Status.SetActive(true);
             RepWin.SetActive(false);
             updscope.Start();
 

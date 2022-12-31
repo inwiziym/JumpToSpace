@@ -27,7 +27,7 @@ public class SettingsPlayerUpg : MonoBehaviour
                 PlayerPrefs.SetInt("TextUpgTimerLvl1", 20);
                 PlayerPrefs.SetInt("TextUpgTimerLvl2", 20);
                 PlayerPrefs.SetInt("TextUpgTimerLvl3", 10);
-                PlayerPrefs.SetFloat("GameTimerUpd", 480f);
+                PlayerPrefs.SetFloat("GameTimerUpd", 420f);
                 PlayerPrefs.SetFloat("GameTimer", 240f);
 
             }
@@ -36,8 +36,8 @@ public class SettingsPlayerUpg : MonoBehaviour
                 PlayerPrefs.SetInt("TextUpgTimerLvl1", 30);
                 PlayerPrefs.SetInt("TextUpgTimerLvl2", 30);
                 PlayerPrefs.SetInt("TextUpgTimerLvl3", 20);
-                PlayerPrefs.SetFloat("GameTimerUpd", 960f);
-                PlayerPrefs.SetFloat("GameTimer", 480f);
+                PlayerPrefs.SetFloat("GameTimerUpd", 540f);
+                PlayerPrefs.SetFloat("GameTimer", 420f);
 
             }
 
@@ -45,7 +45,7 @@ public class SettingsPlayerUpg : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 gomehanic.SetActive(true);
-                PlayerPrefs.SetFloat("GameTimer", 960f);
+                PlayerPrefs.SetFloat("GameTimer", 540f);
             }
 
 

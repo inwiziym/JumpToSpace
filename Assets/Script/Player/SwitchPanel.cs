@@ -11,7 +11,7 @@ public class SwitchPanel : MonoBehaviour
 
     public void SwitchPanelPlayer()
     {
-        if(PlayerPrefs.GetFloat("GameTimer") >= 960f)
+        if(PlayerPrefs.GetFloat("GameTimer") >= 540f)
         {
             gomehanic.SetActive(true);
         }

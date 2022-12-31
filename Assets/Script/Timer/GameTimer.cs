@@ -6,6 +6,7 @@ public class GameTimer : MonoBehaviour
     [SerializeField] private Text timerText;
     public GameObject go_zeroh2o;
     public GameObject goui;
+    public AudioSource Music;
 
     Image timerBar;
     public float gameTime;
@@ -46,7 +47,11 @@ public class GameTimer : MonoBehaviour
     private void UpdateTimeText()
     {
         if (_timeLeft < 0)
+        {
+            Music.mute = true;
             _timeLeft = 0;
+        }
+
 
         float minutes = Mathf.FloorToInt(_timeLeft / 60);
         float seconds = Mathf.FloorToInt(_timeLeft % 60);
