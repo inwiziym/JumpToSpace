@@ -8,7 +8,9 @@ public class Ventilation : MonoBehaviour
     public LoadScopeObj updscope;
 
     public Animator Blade;
-    
+
+
+    public AudioSource audioSource;
 
     public void RepVentilation()
     {
@@ -22,7 +24,7 @@ public class Ventilation : MonoBehaviour
 
 
             Blade.enabled = true;
-
+            audioSource.mute = false;
             PlayerPrefs.SetInt("RepVentilation", 0);
             RepVent.SetActive(false);
             updscope.Start();

@@ -11,6 +11,8 @@ public class BlackHole : MonoBehaviour
     public GameObject AstGO;
     public GameObject BlackHoleGO;
 
+    public AudioSource Music;
+
     public void OnTriggerEnter2D(Collider2D Collider2D)
     {
         if (Collider2D.tag == "PlayerDie")
@@ -27,6 +29,7 @@ public class BlackHole : MonoBehaviour
             AstGO.SetActive(false);
             BlackHoleGO.SetActive(false);
 
+            Music.mute = true;
             Collider2D.gameObject.SetActive(false);
             Time.timeScale = 0;
         }

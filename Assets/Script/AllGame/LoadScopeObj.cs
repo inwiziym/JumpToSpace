@@ -34,6 +34,9 @@ public class LoadScopeObj : MonoBehaviour
     public GameObject ImJumppingLeft;
     public GameObject ImJumppingRight;
 
+    public AudioSource AudioSourceVent;
+    public AudioSource AudioSourceEngine;
+
     public void Start()
     {
         for( int i = 0; i < repwindows.Length; i++ )
@@ -65,6 +68,7 @@ public class LoadScopeObj : MonoBehaviour
         if (PlayerPrefs.GetInt("RepVentilation", 0) == 0)
         {
             Blade.enabled = true;
+            AudioSourceVent.mute = false;
         }
 
         if (PlayerPrefs.GetInt("TheStartGame", 1) == 0)
@@ -78,6 +82,7 @@ public class LoadScopeObj : MonoBehaviour
         {
             FireEngineIm.SetActive(true);
             FireEngine.enabled = true;
+            AudioSourceEngine.mute = false;
         }
 
         if (PlayerPrefs.GetInt("Jumpping", 0) == 1)

@@ -7,6 +7,7 @@ public class EngineChip : MonoBehaviour
     public LoadScopeObj updscope;
 
     public Animator FireEngine;
+    public AudioSource audioSource;
 
     public void RepEngineChip()
     {
@@ -25,7 +26,7 @@ public class EngineChip : MonoBehaviour
             PlayerPrefs.SetInt("MotherboardScope", Motherboard - 5);
 
             FireEngine.enabled= true;
-
+            audioSource.mute = false;
             PlayerPrefs.SetInt("RepEngineChip", 0);
             RepEngine.SetActive(false);
             updscope.Start();

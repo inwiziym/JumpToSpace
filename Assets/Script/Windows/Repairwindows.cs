@@ -8,6 +8,7 @@ public class Repairwindows : MonoBehaviour
     public GameObject RepWin;
     public LoadScopeObj updscope;
 
+
     public void repairwind()
     {
         int DuctTapeScope = PlayerPrefs.GetInt("DuctTapeScope"),
@@ -20,6 +21,7 @@ public class Repairwindows : MonoBehaviour
             PlayerPrefs.SetInt("repwindows0", 0);
             RepWin.SetActive(false);
             updscope.Start();
+
 
         }
         else

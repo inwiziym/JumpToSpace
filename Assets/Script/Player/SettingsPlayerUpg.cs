@@ -64,12 +64,16 @@ public class SettingsPlayerUpg : MonoBehaviour
     public void CreateJummping()
     {
         int DuctTape = PlayerPrefs.GetInt("DuctTapeScope"),
-            Iron = PlayerPrefs.GetInt("IronScope");
+            Iron = PlayerPrefs.GetInt("IronScope"),
+            Wires= PlayerPrefs.GetInt("WiresScope"),
+            Motherboard = PlayerPrefs.GetInt("MotherboardScope");
 
-        if (DuctTape >= 50 && Iron >= 20)
+        if (DuctTape >= 6 && Iron >= 14 && Wires >= 10 && Motherboard >= 10)
         {
-            PlayerPrefs.SetInt("DuctTapeScope", DuctTape - 50);
-            PlayerPrefs.SetInt("IronScope", Iron - 20);
+            PlayerPrefs.SetInt("DuctTapeScope", DuctTape - 6);
+            PlayerPrefs.SetInt("IronScope", Iron - 14);
+            PlayerPrefs.SetInt("WiresScope", Wires - 10);
+            PlayerPrefs.SetInt("MotherboardScope", Motherboard - 10);
 
             ImJumppingLeft.SetActive(true);
             ImJumppingRight.SetActive(true);
