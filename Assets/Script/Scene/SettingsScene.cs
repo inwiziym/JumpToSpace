@@ -5,13 +5,10 @@ using UnityEngine.SceneManagement;
 public class SettingsScene : MonoBehaviour
 {
     public int num_scnene = 1;
-    public AudioSource Music;
 
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Music.mute = true;
-
     }
 
     public void LoadScene()

@@ -1576,7 +1576,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 270297655}
-  - component: {fileID: 270297654}
   - component: {fileID: 270297656}
   m_Layer: 0
   m_Name: go_musicmanager
@@ -1585,20 +1584,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &270297654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270297653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7acddd4d2d5540b41abc6c1a356a904b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: []
-  Prefs: PrefSound
 --- !u!4 &270297655
 Transform:
   m_ObjectHideFlags: 0
@@ -12789,7 +12774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4cfd558600f8954b85e1c5609b3b9ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Music: {fileID: 526264720}
 --- !u!1001 &1873369803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13314,7 +13298,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1922057108}
   - component: {fileID: 1922057107}
-  - component: {fileID: 1922057106}
   m_Layer: 0
   m_Name: go_loading
   m_TagString: Untagged
@@ -13322,22 +13305,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1922057106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922057105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4470ad1859c923a4f9ea36f450608f86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 544156784}
-  slider: {fileID: 1126080815}
-  progressText: {fileID: 561943680}
-  Music: {fileID: 526264720}
 --- !u!114 &1922057107
 MonoBehaviour:
   m_ObjectHideFlags: 0
