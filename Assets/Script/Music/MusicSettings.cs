@@ -11,7 +11,7 @@ public class MusicSettings : MonoBehaviour
     {
         for (int i = 0; i < audioSource.Length; i++)
         {
-            audioSource[i].mute = PlayerPrefs.GetInt(Prefs) == 0;
+            audioSource[i].mute = PlayerPrefs.GetInt(Prefs) == 1;
         }
 
     }
