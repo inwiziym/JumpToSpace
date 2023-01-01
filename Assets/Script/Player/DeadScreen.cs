@@ -5,8 +5,6 @@ public class DeadScreen : MonoBehaviour
     public GameObject godeadscreen;
     public GameObject goui;
 
-    public AudioSource Music;
-
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.name == "player")
@@ -18,7 +16,6 @@ public class DeadScreen : MonoBehaviour
             PlayerPrefs.SetInt("OreCopperScope", PlayerPrefs.GetInt("OreCopperScope", 0) + allobjscale.OreCopper);
             godeadscreen.SetActive(true);
             goui.SetActive(false);
-            Music.mute = true;
             collision.gameObject.SetActive(false);
 
             Time.timeScale = 0;

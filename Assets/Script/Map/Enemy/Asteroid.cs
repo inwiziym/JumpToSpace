@@ -14,8 +14,6 @@ public class Asteroid : MonoBehaviour
     public float MoveSpeedAstY;
     public float MoveSpeedAstZ;
 
-    public AudioSource Music;
-
     public void Update()
     {
         transform.position = transform.position + new Vector3(MoveSpeedAstX, MoveSpeedAstY, MoveSpeedAstZ);
@@ -36,7 +34,6 @@ public class Asteroid : MonoBehaviour
             PlayerGO.SetActive(false);
             AstGO.SetActive(false);
             BlackHoleGO.SetActive(false);
-            Music.mute = true;
             Collider2D.gameObject.SetActive(false);
             Time.timeScale = 0;
         }
