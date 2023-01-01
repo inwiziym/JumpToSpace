@@ -29269,7 +29269,6 @@ MonoBehaviour:
   loadingScreen: {fileID: 630758088}
   slider: {fileID: 1633009407}
   progressText: {fileID: 1939229034}
-  Music: {fileID: 547071801}
 --- !u!114 &1733032605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29283,7 +29282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num_scnene: 1
-  Music: {fileID: 0}
 --- !u!224 &1733032606
 RectTransform:
   m_ObjectHideFlags: 0

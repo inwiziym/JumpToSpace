@@ -10,12 +10,12 @@ public class StartSound : MonoBehaviour
     void Start()
     {
         Toggletoggle = GetComponent<Toggle>();
-        Toggletoggle.isOn = PlayerPrefs.GetInt(Prefs) == 1;
+        Toggletoggle.isOn = PlayerPrefs.GetInt(Prefs) == 0;
     }
 
     public void soundChanged()
     {
-        PlayerPrefs.SetInt(Prefs, Toggletoggle.isOn ? 1 : 0);
+        PlayerPrefs.SetInt(Prefs, Toggletoggle.isOn ? 0 : 1);
         for(int i = 0; i < audioSource.Length; i++)
         {
             audioSource[i].mute = !Toggletoggle.isOn;
