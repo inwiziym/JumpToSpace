@@ -19,8 +19,8 @@ public class SettingsSound : MonoBehaviour
 
         if (firstPlayInt == 0)
         {
-            musicFloat = 1f;
-            soundEffectsFloat = 1f;
+            musicFloat = 0.5f;
+            soundEffectsFloat = 0.5f;
             musicSlider.value = musicFloat;
             soundEffectsSlider.value = soundEffectsFloat;
             PlayerPrefs.SetFloat(MusicPref, musicFloat);
