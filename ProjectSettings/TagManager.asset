@@ -7,6 +7,9 @@ TagManager:
   - Dead
   - Windows
   - PlayerDie
+  - WarringLeft
+  - WarringRight
+  - Asteroid
   layers:
   - Default
   - TransparentFX

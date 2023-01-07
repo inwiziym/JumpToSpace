@@ -14,6 +14,13 @@ public class Asteroid : MonoBehaviour
     public float MoveSpeedAstY;
     public float MoveSpeedAstZ;
 
+    public GameObject LeftWarring;
+    public GameObject RightWarring;
+
+    public GameObject AsteroidGO;
+
+    public AudioSource Music;
+
     public void Update()
     {
         transform.position = transform.position + new Vector3(MoveSpeedAstX, MoveSpeedAstY, MoveSpeedAstZ);
@@ -31,11 +38,12 @@ public class Asteroid : MonoBehaviour
             godeadscreen.SetActive(true);
             goui.SetActive(false);
 
+            Music.mute = true;
+
             PlayerGO.SetActive(false);
             AstGO.SetActive(false);
             BlackHoleGO.SetActive(false);
             Collider2D.gameObject.SetActive(false);
-            Time.timeScale = 0;
         }
     }
 
@@ -50,13 +58,24 @@ public class Asteroid : MonoBehaviour
             if(RandX > (0))
             {
                 MoveSpeedAstX = Random.Range(-0.009f, -0.007f);
+                Vector3 newRotation = new Vector3(0, 0, -18);
+                transform.eulerAngles = newRotation;
+                RightWarring.SetActive(true);
+                LeftWarring.SetActive(false);
+
             }
             else
             {
                 MoveSpeedAstX = Random.Range(0.007f, 0.009f);
+                Vector3 newRotation = new Vector3(0, 0, 18);
+                transform.eulerAngles = newRotation;
+
+                RightWarring.SetActive(false);
+                LeftWarring.SetActive(true);
             }
 
             transform.position = new Vector3(RandX, RandY, 0);
         }
     }
+
 }

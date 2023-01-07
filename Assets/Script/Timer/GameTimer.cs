@@ -12,8 +12,12 @@ public class GameTimer : MonoBehaviour
     float timeLeft;
     private float _timeLeft = 0f;
 
+    public AudioSource Music;
+
     void Start()
     {
+        Music = GetComponent<AudioSource>();
+
         _timeLeft = gameTime;
         timerBar = GetComponent<Image>();
         timeLeft = gameTime;
@@ -47,6 +51,7 @@ public class GameTimer : MonoBehaviour
     {
         if (_timeLeft < 0)
         {
+            Music.mute = true;
             _timeLeft = 0;
         }
 

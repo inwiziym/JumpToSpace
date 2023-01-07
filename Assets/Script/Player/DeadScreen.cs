@@ -5,6 +5,11 @@ public class DeadScreen : MonoBehaviour
     public GameObject godeadscreen;
     public GameObject goui;
 
+    public GameObject Asteroid;
+    public GameObject Player;
+
+    public AudioSource Music;
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.name == "player")
@@ -16,9 +21,12 @@ public class DeadScreen : MonoBehaviour
             PlayerPrefs.SetInt("OreCopperScope", PlayerPrefs.GetInt("OreCopperScope", 0) + allobjscale.OreCopper);
             godeadscreen.SetActive(true);
             goui.SetActive(false);
+            Asteroid.SetActive(false);
+            Player.SetActive(false);
             collision.gameObject.SetActive(false);
 
-            Time.timeScale = 0;
+
+            Music.mute = true;
         }
     }
 
