@@ -48,6 +48,8 @@ public class AllGame : MonoBehaviour
         PlayerPrefs.SetInt("CreateJumpping", 1);
         PlayerPrefs.SetInt("Jumpping", 0);
 
+        PlayerPrefs.SetInt("Podarochek", 1);
+
 
     }
 }

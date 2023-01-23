@@ -36,6 +36,10 @@ public class LoadScopeObj : MonoBehaviour
 
     public AudioSource AudioSourceVent;
     public AudioSource AudioSourceEngine;
+
+    public GameObject PodarokActive;
+
+
     public void Start()
     {
         for( int i = 0; i < repwindows.Length; i++ )
@@ -83,6 +87,11 @@ public class LoadScopeObj : MonoBehaviour
             FireEngineIm.SetActive(true);
             FireEngine.enabled = true;
             AudioSourceEngine.mute = false;
+        }
+
+        if (PlayerPrefs.GetInt("Podarochek", 1) == 0)
+        {
+            PodarokActive.SetActive(false);
         }
 
         if (PlayerPrefs.GetInt("Jumpping", 0) == 1)
